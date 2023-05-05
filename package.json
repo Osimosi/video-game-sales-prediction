@@ -17,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "netlify": "netlify-lambda build netlify/functions",
+    "postinstall": "npm run netlify"
   },
   "eslintConfig": {
     "extends": "react-app"
