@@ -19,7 +19,7 @@ function App() {
       setPredictionLoading(true)
       setModelPrediction(null)
       setRequestFailed(null)
-      axios.post(process.env.https://game-sales-prediction.herokuapp.com/get_prediction, selectedObject)
+      axios.post(process.env.HEROKU_API_URL, selectedObject)
       .then(function (response) {
         setPredictionLoading(false)
         setModelPrediction(response.data.result)
